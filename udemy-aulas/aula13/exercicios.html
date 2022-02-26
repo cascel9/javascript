@@ -9,19 +9,13 @@
 <body>
     <script>
         const nome = prompt('Seu nome');
-        const tamanho = nome.length;
-        const segletra = nome.slice(1, 2);
-        const primIndice = nome.search(/nome/);
-        const ultimoind = nome.indexOf();
-        const caixaAlta = nome.toUpperCase();
-        const caixaBaixa = nome.toLowerCase();
         document.body.innerHTML += (`O seu nome é ${nome}<br>`);
-        document.body.innerHTML +=(`Seu nome tem ${tamanho} letras <br>`);
-        document.body.innerHTML +=(`A segunda letra do seu nome é: ${segletra} <br>`);
-        document.body.innerHTML +=(`Qual o primeiro índice da letra LETRA no seu nome? ${primIndice}<br>`);
-        document.body.innerHTML +=(`Qual o último índice da letra LETRA no seu nome? ${ultimoind}<br>`);
-        document.body.innerHTML +=(`${caixaAlta}<br>`);
-        document.body.innerHTML +=(`${caixaBaixa}<br>`);
+        document.body.innerHTML +=(`Seu nome tem ${nome.length} letras <br>`);
+        document.body.innerHTML +=(`A segunda letra do seu nome é: ${nome[1]} <br>`);
+        document.body.innerHTML +=(`Qual o primeiro índice da letra a no seu nome? ${nome.indexOf('a')}<br>`);
+        document.body.innerHTML +=(`Qual o último índice da letra a LETRA no seu nome? ${nome.lastIndexOf('a')}<br>`);
+        document.body.innerHTML +=(`Últimas 3 letras do seu nome: ${nome.slice(-3)}<br>`);
+        document.body.innerHTML +=(`As palavras do seu nome são: ${nome.split(' ')}<br>`);
     </script>
     
 </body>
