@@ -1,4 +1,4 @@
-const alunos = ['Luiza', 'Maria', 'João'];
+const alunos = ['Luiza Almeida', 'Maria', 'João'];
 
 
 const teste = alunos.slice(0, -2);
